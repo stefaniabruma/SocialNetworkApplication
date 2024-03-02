@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="301.0" prefWidth="484.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.map.socialnetworkapp.FriendRequestsController">
+   <children>
+      <TableView fx:id="tableViewUsers" layoutX="39.0" layoutY="22.0" prefHeight="200.0" prefWidth="346.0">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="columnFirstName" prefWidth="123.20000457763672" text="First Name" />
+            <TableColumn fx:id="columnLastName" prefWidth="148.0" text="Last Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="399.0" layoutY="83.0" mnemonicParsing="false" onAction="#handleAccept" text="Accept" />
+      <Button layoutX="397.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleDecline" text="Decline" />
+      <Button layoutX="254.0" layoutY="237.0" mnemonicParsing="false" onAction="#handlePrevious" text="Previous" />
+      <Button layoutX="323.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleNext" prefHeight="26.0" prefWidth="61.0" text="Next" />
+      <Label layoutX="39.0" layoutY="241.0" text="Show" />
+      <TextField fx:id="textFieldPageSize" layoutX="76.0" layoutY="236.0" prefHeight="26.0" prefWidth="30.0" />
+      <Label layoutX="115.0" layoutY="240.0" text="users per page." />
+   </children>
+</AnchorPane>
