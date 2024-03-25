@@ -1,1 +1,1 @@
-This is a Java GUI application that simulates a social network app.
+This is a Java GUI _relational database_ application that simulates a social network app.
